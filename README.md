@@ -3,7 +3,7 @@ Uniswap-AMM for godwoken/nervos ecosystem.
 
 ## Demo site
 
-http://nervoswap.freeddns.org:8080/
+http://nervoswap.freeddns.org:8080/#/swap
 
 ## Build
 
