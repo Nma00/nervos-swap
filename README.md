@@ -1,46 +1,43 @@
 # Nervos Swap
-Uniswap-AMM for godwoken/nervos ecosystem.
+Uniswap fork for Nervos L2 Godwoken.
 
 ## Demo site
 
-http://nervoswap.freeddns.org:8080/#/swap
+http://nervoswap.freeddns.org:8080
 
 ## Build
 
 ### Backend
 
-cd backend
-
 Install dependencies
-npm install
+    npm install
 
 Compile contracts
-npx hardhat compile
+    npx hardhat compile
 
-Deploy contract
-npx hardhat run .\scripts\deploy-script.js
+Deploy contracts
+    npx hardhat run .\scripts\deploy-script.js
 
 ### Sdk
 
 Install dependencies
-npm install
+    npm install
 
-npm run build
+    npm run build
 
 ### Interface
 
 Install dependencies
-npm install
+    npm install
 
-Start developpment server
-npm run start
+Start development server
+    npm run start
 
 Production build
-npm run build
+    npm run build
 
-## Contract addresses
+## Contracts addresses
 
-Factory deployed to : 0x5A69d3552050A1B57ea914cbBB6Da3fb8Cee2ab1
-Router V02 deployed to :  0x304FBcaF6d3A3F0372cC1252345a10d575A3695D
-Multicall deployed to : 0x759d12AfAE97eC609Ec962a883E58C4005981C65
-CKB ERC20 deployed to : 0x4B6DFa286F196F61134b03e783d73708687B93D0
+* Factory : [0x5A69d3552050A1B57ea914cbBB6Da3fb8Cee2ab1](https://v1.aggron.gwscan.com/account/0x5a69d3552050a1b57ea914cbbb6da3fb8cee2ab1)
+* Router V02 :  [0x304FBcaF6d3A3F0372cC1252345a10d575A3695D](https://v1.aggron.gwscan.com/account/0x304FBcaF6d3A3F0372cC1252345a10d575A3695D)
+* Multicall : [0x759d12AfAE97eC609Ec962a883E58C4005981C65](https://v1.aggron.gwscan.com/account/0x759d12AfAE97eC609Ec962a883E58C4005981C65)

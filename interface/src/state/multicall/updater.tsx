@@ -33,15 +33,11 @@ async function fetchChunk(
   minBlockNumber: number
 ): Promise<{ results: string[]; blockNumber: number }> {
   console.debug('Fetching chunk', multicallContract, chunk, minBlockNumber)
-  //console.error('Fetching chunk-', multicallContract, chunk, minBlockNumber)
   let resultsBlockNumber, returnData
   try {
-    //console.error('chunk ! -', chunk)
-    ;[resultsBlockNumber, returnData] = await multicallContract.aggregate(chunk.map(obj => [obj.address, obj.callData]), { gasLimit: '9000000' })    
-    // Default
     //;[resultsBlockNumber, returnData] = await multicallContract.aggregate(chunk.map(obj => [obj.address, obj.callData]))
+    ;[resultsBlockNumber, returnData] = await multicallContract.aggregate(chunk.map(obj => [obj.address, obj.callData]), { gasLimit: '9000000' })
   } catch (error) {
-    //console.error('Failed to fetch chunk inside retry -', error)
     console.debug('Failed to fetch chunk inside retry', error)
     throw error
   }

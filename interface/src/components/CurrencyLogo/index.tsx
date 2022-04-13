@@ -7,8 +7,12 @@ import useHttpLocations from '../../hooks/useHttpLocations'
 import { WrappedTokenInfo } from '../../state/lists/hooks'
 import Logo from '../Logo'
 
+// Default
+//const getTokenLogoURL = (address: string) =>
+//  `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`
 const getTokenLogoURL = (address: string) =>
-  `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`
+  ``
+
 
 const StyledEthereumLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};
