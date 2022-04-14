@@ -5,7 +5,7 @@ Uniswap fork for Nervos L2 Godwoken.
 
 http://nervoswap.freeddns.org:8080
 
-## Video 
+## Video
 
 https://youtu.be/G8zOd8IV0E0
 
