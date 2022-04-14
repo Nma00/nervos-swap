@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, PETH, WDEV } from 'nervoswap-sdk'
+import { Currency, currencyEquals, CKB, WDEV } from 'nervoswap-sdk'
 import { useMemo } from 'react'
 import { tryParseAmount } from '../state/swap/hooks'
 import { useTransactionAdder } from '../state/transactions/hooks'
@@ -36,7 +36,7 @@ export default function useWrapCallback(
 
     const sufficientBalance = inputAmount && balance && !balance.lessThan(inputAmount)
 
-    if (inputCurrency === PETH && currencyEquals(WDEV[chainId], outputCurrency)) {
+    if (inputCurrency === CKB && currencyEquals(WDEV[chainId], outputCurrency)) {
       return {
         wrapType: WrapType.WRAP,
         execute:
@@ -44,7 +44,7 @@ export default function useWrapCallback(
             ? async () => {
                 try {
                   const txReceipt = await wethContract.deposit({ value: `0x${inputAmount.raw.toString(16)}` })
-                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} PETH to WDEV` })
+                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} CKB to WDEV` })
                 } catch (error) {
                   console.error('Could not deposit', error)
                 }
@@ -52,7 +52,7 @@ export default function useWrapCallback(
             : undefined,
         inputError: sufficientBalance ? undefined : 'Insufficient DEV balance'
       }
-    } else if (currencyEquals(WDEV[chainId], inputCurrency) && outputCurrency === PETH) {
+    } else if (currencyEquals(WDEV[chainId], inputCurrency) && outputCurrency === CKB) {
       return {
         wrapType: WrapType.UNWRAP,
         execute:

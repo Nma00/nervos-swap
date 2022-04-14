@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, currencyEquals, PETH, Token } from 'nervoswap-sdk'
+import { Currency, CurrencyAmount, currencyEquals, CKB, Token } from 'nervoswap-sdk'
 import React, { CSSProperties, MutableRefObject, useCallback, useMemo } from 'react'
 import { FixedSizeList } from 'react-window'
 import { Text } from 'rebass'
@@ -18,7 +18,7 @@ import Loader from '../Loader'
 import { isTokenOnList } from '../../utils'
 
 function currencyKey(currency: Currency): string {
-  return currency instanceof Token ? currency.address : currency === PETH ? 'PETH' : ''
+  return currency instanceof Token ? currency.address : currency === CKB ? 'CKB' : ''
 }
 
 const StyledBalanceText = styled(Text)`
@@ -171,7 +171,7 @@ export default function CurrencyList({
   fixedListRef?: MutableRefObject<FixedSizeList | undefined>
   showETH: boolean
 }) {
-  const itemData = useMemo(() => (showETH ? [Currency.PETH, ...currencies] : currencies), [currencies, showETH])
+  const itemData = useMemo(() => (showETH ? [Currency.CKB, ...currencies] : currencies), [currencies, showETH])
 
   const Row = useCallback(
     ({ data, index, style }) => {

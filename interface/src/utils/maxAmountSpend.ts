@@ -1,4 +1,4 @@
-import { CurrencyAmount, PETH, JSBI } from 'nervoswap-sdk'
+import { CurrencyAmount, CKB, JSBI } from 'nervoswap-sdk'
 import { MIN_ETH } from '../constants'
 
 /**
@@ -7,7 +7,7 @@ import { MIN_ETH } from '../constants'
  */
 export function maxAmountSpend(currencyAmount?: CurrencyAmount): CurrencyAmount | undefined {
   if (!currencyAmount) return undefined
-  if (currencyAmount.currency === PETH) {
+  if (currencyAmount.currency === CKB) {
     if (JSBI.greaterThan(currencyAmount.raw, MIN_ETH)) {
       return CurrencyAmount.ether(JSBI.subtract(currencyAmount.raw, MIN_ETH))
     } else {

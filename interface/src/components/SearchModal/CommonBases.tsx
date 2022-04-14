@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from 'rebass'
-import { ChainId, Currency, currencyEquals, PETH, Token } from 'nervoswap-sdk'
+import { ChainId, Currency, currencyEquals, CKB, Token } from 'nervoswap-sdk'
 import styled from 'styled-components'
 
 import { SUGGESTED_BASES } from '../../constants'
@@ -45,15 +45,15 @@ export default function CommonBases({
       <AutoRow gap="4px">
         <BaseWrapper
           onClick={() => {
-            if (!selectedCurrency || !currencyEquals(selectedCurrency, PETH)) {
-              onSelect(PETH)
+            if (!selectedCurrency || !currencyEquals(selectedCurrency, CKB)) {
+              onSelect(CKB)
             }
           }}
-          disable={selectedCurrency === PETH}
+          disable={selectedCurrency === CKB}
         >
-          <CurrencyLogo currency={PETH} style={{ marginRight: 8 }} />
+          <CurrencyLogo currency={CKB} style={{ marginRight: 8 }} />
           <Text fontWeight={500} fontSize={16}>
-            PETH 
+            CKB 
           </Text>
         </BaseWrapper>
         {(chainId ? SUGGESTED_BASES[chainId] : []).map((token: Token) => {

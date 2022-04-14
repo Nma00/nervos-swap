@@ -97,7 +97,7 @@ export default function Menu() {
             <Home size={14} />
             {t('Website')}
           </MenuItem>
-          <MenuItem id="link" href="https://www.nervos.org/">
+          <MenuItem id="link" href="https://github.com/nervosnetwork">
             <Code size={14} />
             {t('code')}
           </MenuItem>

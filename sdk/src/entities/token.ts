@@ -68,5 +68,5 @@ export const WDEV = {
     'Wrapped Ether'
   ),
   [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, ROPSTEN_WETH, 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.GW]: new Token(ChainId.GW, GW_WETH, 8, 'CKB', 'CKB ERC20')
+  [ChainId.GW]: new Token(ChainId.GW, GW_WETH, 8, 'pCKB', 'CKB ERC20')
 }

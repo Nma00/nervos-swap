@@ -1,7 +1,7 @@
-import { ChainId, Currency, CurrencyAmount, PETH, Token, TokenAmount, WDEV } from 'nervoswap-sdk'
+import { ChainId, Currency, CurrencyAmount, CKB, Token, TokenAmount, WDEV } from 'nervoswap-sdk'
 
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {
-  return chainId && currency === PETH ? WDEV[chainId] : currency instanceof Token ? currency : undefined
+  return chainId && currency === CKB ? WDEV[chainId] : currency instanceof Token ? currency : undefined
 }
 
 export function wrappedCurrencyAmount(
@@ -13,6 +13,6 @@ export function wrappedCurrencyAmount(
 }
 
 export function unwrappedToken(token: Token): Currency {
-  if (token.equals(WDEV[token.chainId])) return PETH
+  if (token.equals(WDEV[token.chainId])) return CKB
   return token
 }

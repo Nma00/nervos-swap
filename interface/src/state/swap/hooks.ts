@@ -1,6 +1,6 @@
 import useENS from '../../hooks/useENS'
 import { parseUnits } from '@ethersproject/units'
-import { Currency, CurrencyAmount, PETH, JSBI, Token, TokenAmount, Trade } from 'nervoswap-sdk'
+import { Currency, CurrencyAmount, CKB, JSBI, Token, TokenAmount, Trade } from 'nervoswap-sdk'
 import { ParsedQs } from 'qs'
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -34,7 +34,7 @@ export function useSwapActionHandlers(): {
       dispatch(
         selectCurrency({
           field,
-          currencyId: currency instanceof Token ? currency.address : currency === PETH ? 'ETH' : ''
+          currencyId: currency instanceof Token ? currency.address : currency === CKB ? 'CKB' : ''
         })
       )
     },
