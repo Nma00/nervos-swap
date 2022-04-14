@@ -13,23 +13,23 @@ https://youtu.be/O501_cvzmm4
 
 ### Backend
 
-Install dependencies
+Install dependencies :
 ```
 npm install
 ```
-Compile contracts
+Compile contracts :
 ```
 npx hardhat compile
 ```
 
-Deploy contracts
+Deploy contracts :
 ```
 npx hardhat run .\scripts\deploy-script.js
 ```
 
 ### Sdk
 
-Install dependencies
+Install dependencies and build :
 ```
 npm install
 ```
@@ -39,17 +39,17 @@ npm run build
 
 ### Interface
 
-Install dependencies
+Install dependencies :
 ```
 npm install
 ```
 
-Start development server
+Start development server :
 ```
 npm start
 ```
 
-Production build
+Production build :
 ```
 npm run build
 ```
