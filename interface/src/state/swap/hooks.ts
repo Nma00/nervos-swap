@@ -205,10 +205,10 @@ function parseCurrencyFromURLParameter(urlParam: any): string {
   if (typeof urlParam === 'string') {
     const valid = isAddress(urlParam)
     if (valid) return valid
-    if (urlParam.toUpperCase() === 'ETH') return 'ETH'
-    if (valid === false) return 'ETH'
+    if (urlParam.toUpperCase() === 'CKB') return 'CKB'
+    if (valid === false) return 'CKB'
   }
-  return 'ETH' ?? ''
+  return 'CKB' ?? ''
 }
 
 function parseTokenAmountURLParameter(urlParam: any): string {
