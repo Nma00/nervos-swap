@@ -7,7 +7,7 @@ http://nervoswap.freeddns.org:8080
 
 ## Video
 
-https://youtu.be/G8zOd8IV0E0
+https://youtu.be/O501_cvzmm4
 
 ## Build
 
