@@ -1,8 +1,8 @@
 {
   "name": "nervoswap-sdk",
   "license": "MIT",
-  "version": "1.0.8",
-  "description": "🛠 Nevos swap SDK",
+  "version": "1.0.9",
+  "description": "Nervos Swap SDK",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [

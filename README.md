@@ -56,6 +56,6 @@ npm run build
 
 ## Contracts addresses
 
-* Factory : [0x5A69d3552050A1B57ea914cbBB6Da3fb8Cee2ab1](https://v1.aggron.gwscan.com/account/0x5a69d3552050a1b57ea914cbbb6da3fb8cee2ab1)
-* Router V02 : [0x304FBcaF6d3A3F0372cC1252345a10d575A3695D](https://v1.aggron.gwscan.com/account/0x304FBcaF6d3A3F0372cC1252345a10d575A3695D)
-* Multicall : [0x759d12AfAE97eC609Ec962a883E58C4005981C65](https://v1.aggron.gwscan.com/account/0x759d12AfAE97eC609Ec962a883E58C4005981C65)
+* Factory : [0xfE336Bb4985F7f5294d01161a83A01C460a7d481](https://v1.aggron.gwscan.com/account/0xfE336Bb4985F7f5294d01161a83A01C460a7d481)
+* Router V02 : [0x3Ea455fad8d7bdcEDC53aa1B76E019712D0e6134](https://v1.aggron.gwscan.com/account/0x3Ea455fad8d7bdcEDC53aa1B76E019712D0e6134)
+* Multicall : [0xeB182C35983B1ABbaDBb73E25c3e85787A323013](https://v1.aggron.gwscan.com/account/0xeB182C35983B1ABbaDBb73E25c3e85787A323013)

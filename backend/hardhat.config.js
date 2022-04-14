@@ -10,7 +10,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-const ALCHEMY_API_KEY = "";
+const ALCHEMY_API_KEY = '';
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more

@@ -6,13 +6,8 @@ async function main() {
    deployerAddress = owner.address;
    console.log(`Owner : ${deployerAddress}`);
 
-   const ckbERC20 = "0x4B6DFa286F196F61134b03e783d73708687B93D0";
-
-   /*const weth = await ethers.getContractFactory('WETH');
-   const wethInstance = await weth.deploy();
-   await wethInstance.deployed();
-
-   console.log(`WETH deployed to : ${wethInstance.address}`);*/
+   const ckbERC20 = "0x86efaff75201Ed513c2c9061f2913eec850af56C";
+   console.log(`pCKB (CKB ERC20) :  ${ckbERC20}`);
 
    const factory = await ethers.getContractFactory('UniswapV2Factory');
    const factoryInstance = await factory.deploy(deployerAddress);
