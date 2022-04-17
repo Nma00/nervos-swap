@@ -1,6 +1,6 @@
-// the DCTDEX Default token list lives here
+// the Nervos Swap Default token list lives here
 export const DEFAULT_TOKEN_LIST_URL =
-  'https://gist.githubusercontent.com/WoeOm/7ed7b8529f2cc8efbd317c56cf52f131/raw/dbcb5c27faf316dfd9d822568609afdd08a5e2cb/tokens.json'
+  'https://gist.githubusercontent.com/nma06/a6ed2b249d92d04efa09ae897f32b50b/raw/b15d7c54aaefa80183d284e5abfe772b750b52db/nervoswap.tokenlist.kson'
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [
   DEFAULT_TOKEN_LIST_URL

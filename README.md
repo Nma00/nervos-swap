@@ -60,4 +60,5 @@ npm run build
 * Multicall : [0xeB182C35983B1ABbaDBb73E25c3e85787A323013](https://v1.aggron.gwscan.com/account/0xeB182C35983B1ABbaDBb73E25c3e85787A323013)
 * Factory : [0xfE336Bb4985F7f5294d01161a83A01C460a7d481](https://v1.aggron.gwscan.com/account/0xfE336Bb4985F7f5294d01161a83A01C460a7d481)
 * pCKB : [0x86efaff75201Ed513c2c9061f2913eec850af56C](https://v1.aggron.gwscan.com/account/0xfE336Bb4985F7f5294d01161a83A01C460a7d481)
-
+* Test TokenA : [0x5c6b21F26c2d4C3A9192C9C5e5edee630ACF0d89](https://v1.aggron.gwscan.com/account/0x5c6b21F26c2d4C3A9192C9C5e5edee630ACF0d89)
+* Test TokenB : [0x83b18f52BAA89b583Dbe1c6072D14c0F6e3f5074](https://v1.aggron.gwscan.com/account/0x83b18f52BAA89b583Dbe1c6072D14c0F6e3f5074)
