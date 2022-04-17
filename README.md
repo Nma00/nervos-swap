@@ -59,5 +59,5 @@ npm run build
 * Router : [0x3Ea455fad8d7bdcEDC53aa1B76E019712D0e6134](https://v1.aggron.gwscan.com/account/0x3Ea455fad8d7bdcEDC53aa1B76E019712D0e6134)
 * Multicall : [0xeB182C35983B1ABbaDBb73E25c3e85787A323013](https://v1.aggron.gwscan.com/account/0xeB182C35983B1ABbaDBb73E25c3e85787A323013)
 * Factory : [0xfE336Bb4985F7f5294d01161a83A01C460a7d481](https://v1.aggron.gwscan.com/account/0xfE336Bb4985F7f5294d01161a83A01C460a7d481)
-* pCKB (CKB ERC20) : [0x86efaff75201Ed513c2c9061f2913eec850af56C](https://v1.aggron.gwscan.com/account/0xfE336Bb4985F7f5294d01161a83A01C460a7d481)
+* pCKB : [0x86efaff75201Ed513c2c9061f2913eec850af56C](https://v1.aggron.gwscan.com/account/0xfE336Bb4985F7f5294d01161a83A01C460a7d481)
 
