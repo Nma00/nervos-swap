@@ -17,6 +17,7 @@
     "hardhat": "^2.9.3"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^3.4.1",
     "@uniswap/lib": "^4.0.1-alpha",
     "@uniswap/v2-core": "^1.0.1"
   }

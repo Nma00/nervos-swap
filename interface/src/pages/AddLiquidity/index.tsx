@@ -1,6 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, CKB, TokenAmount, WDEV } from 'nervoswap-sdk'
+//import { Currency, currencyEquals, CKB, TokenAmount, WDEV } from 'nervoswap-sdk'
+import { Currency, currencyEquals, TokenAmount, WDEV } from 'nervoswap-sdk'
 import React, { useCallback, useContext, useState } from 'react'
 import { Plus } from 'react-feather'
 import ReactGA from 'react-ga'
@@ -147,7 +148,7 @@ export default function AddLiquidity({
       method: (...args: any) => Promise<TransactionResponse>,
       args: Array<string | string[] | number>,
       value: BigNumber | null
-    if (currencyA === CKB || currencyB === CKB) {
+    /*if (currencyA === CKB || currencyB === CKB) {
       const tokenBIsETH = currencyB === CKB
       estimate = router.estimateGas.addLiquidityETH
       method = router.addLiquidityETH
@@ -160,7 +161,7 @@ export default function AddLiquidity({
         deadlineFromNow
       ]
       value = BigNumber.from((tokenBIsETH ? parsedAmountB : parsedAmountA).raw.toString())
-    } else {
+    } else {*/
       estimate = router.estimateGas.addLiquidity
       method = router.addLiquidity
       args = [
@@ -174,7 +175,7 @@ export default function AddLiquidity({
         deadlineFromNow
       ]
       value = null
-    }
+    //}
 
     setAttemptingTxn(true)
     await estimate(...args, value ? { value } : {})

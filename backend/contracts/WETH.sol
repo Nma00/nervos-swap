@@ -20,9 +20,9 @@
 pragma solidity =0.6.6;
 
 contract WETH {
-    string public name     = "CKB ERC20";
-    string public symbol   = "pCKB";
-    uint8  public decimals = 8;
+    string public name     = "Wrapped Ether";
+    string public symbol   = "WETH";
+    uint8  public decimals = 18;
 
     event  Approval(address indexed src, address indexed guy, uint wad);
     event  Transfer(address indexed src, address indexed dst, uint wad);

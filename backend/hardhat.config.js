@@ -15,13 +15,13 @@ const ALCHEMY_API_KEY = '';
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
-const PRIVATE_KEY = ''; // Unsafe account MM
+const PRIVATE_KEY = '';
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
  module.exports = {
-  defaultNetwork: 'godwoken',
+  defaultNetwork: 'hardhat',
   networks: {
      hardhat: {},
      godwoken: {
@@ -61,7 +61,7 @@ const PRIVATE_KEY = ''; // Unsafe account MM
      artifacts: './artifacts',
   },
   mocha: {
-     timeout: 20000,
+     timeout: 300000,
   },
 };
 

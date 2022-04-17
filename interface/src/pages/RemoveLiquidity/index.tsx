@@ -215,7 +215,7 @@ export default function RemoveLiquidity({
     // we have approval, use normal remove liquidity
     if (approval === ApprovalState.APPROVED) {
       // removeLiquidityETH
-      if (oneCurrencyIsETH) {
+      /*if (oneCurrencyIsETH) {
         methodNames = ['removeLiquidityETH', 'removeLiquidityETHSupportingFeeOnTransferTokens']
         args = [
           currencyBIsETH ? tokenA.address : tokenB.address,
@@ -225,9 +225,9 @@ export default function RemoveLiquidity({
           account,
           deadlineFromNow
         ]
-      }
+      }*/
       // removeLiquidity
-      else {
+      //else {
         methodNames = ['removeLiquidity']
         args = [
           tokenA.address,
@@ -238,7 +238,7 @@ export default function RemoveLiquidity({
           account,
           deadlineFromNow
         ]
-      }
+      //}
     }
     // we have a signataure, use permit versions of remove liquidity
     else if (signatureData !== null) {

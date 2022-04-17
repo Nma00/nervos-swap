@@ -1,4 +1,5 @@
 import { CurrencyAmount, JSBI, Token, Trade } from 'nervoswap-sdk'
+//import { JSBI, Token, Trade } from 'nervoswap-sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 import ReactGA from 'react-ga'
@@ -160,6 +161,7 @@ export default function Swap() {
       setApprovalSubmitted(true)
     }
   }, [approval, approvalSubmitted])
+
 
   const maxAmountInput: CurrencyAmount | undefined = maxAmountSpend(currencyBalances[Field.INPUT])
   const atMaxAmountInput = Boolean(maxAmountInput && parsedAmounts[Field.INPUT]?.equalTo(maxAmountInput))
