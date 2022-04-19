@@ -1,8 +1,6 @@
-# Basic Sample Hardhat Project
+# Smart contracts for Uniswap V2
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
+Hardhat tasks available :
 
 ```shell
 npx hardhat accounts

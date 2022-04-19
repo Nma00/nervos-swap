@@ -10,18 +10,18 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-const ALCHEMY_API_KEY = '';
+const ALCHEMY_API_KEY = 'k-gshmWG-W3hKlqh4QCFQwYPLG-SC_sa';
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
-const PRIVATE_KEY = '';
+const PRIVATE_KEY = '72483587cdfc82a43cd770661f720c5c2e5bcc57324c7bf3749d3d6f78df81b1';
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
  module.exports = {
-  defaultNetwork: 'hardhat',
+  defaultNetwork: 'godwoken',
   networks: {
      hardhat: {},
      godwoken: {

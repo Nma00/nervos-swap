@@ -3,6 +3,8 @@ const { ethers } = require("hardhat");
 
 const overrides = { gasLimit: 300000000 }
 
+const ckbERC20 = "0x86efaff75201Ed513c2c9061f2913eec850af56C";
+
 let signer, router, tokenA, tokenB;
 
 async function showBalance() {
@@ -32,13 +34,10 @@ before(async function () {
     await uniswapV2Factory.deployed();
     console.log("UniswapV2Factory deployed to:", uniswapV2Factory.address);
 
-    const PCKB = await ethers.getContractFactory("WETH");
-    const pCKB = await PCKB.deploy();
-    await pCKB.deployed();
-    console.log("CKB ERC20 (pCKB) deployed to:", pCKB.address);
+    console.log(`pCKB (CKB ERC20) :  ${ckbERC20}`);
 
     const UniswapV2Router02 = await ethers.getContractFactory("UniswapV2Router02");
-    router = await UniswapV2Router02.deploy(uniswapV2Factory.address, pCKB.address);
+    router = await UniswapV2Router02.deploy(uniswapV2Factory.address, ckbERC20);
     await router.deployed();
     console.log(`UniswapV2Router02 deployed to: ${router.address}\n`);
 });
@@ -71,36 +70,6 @@ describe("Add Liquidity", function () {
             signer.address,
             ethers.constants.MaxUint256, 
             overrides);
-        await tx.wait();
-
-        await showBalance();
-    });
-
-    it("IT addLiquidityCKB", async function () {
-
-        let amountA = ethers.utils.parseUnits("100");
-        let amountCKB = ethers.utils.parseUnits("1", 8);
-
-        let tx = await tokenA.approve(router.address, amountA, overrides);
-        await tx.wait();
-
-        await showBalance();
-
-        console.log(`addLiquidityETH : TokenA ${ethers.utils.formatUnits(amountA)} / TokenCKB ${ethers.utils.formatUnits(amountCKB, 8)}`);
-
-        const options = {
-            value: amountCKB,
-            gasLimit: overrides.gasLimit
-        }
-
-        tx = await router.addLiquidityETH(
-            tokenA.address,
-            amountA,
-            ethers.constants.Zero,
-            ethers.constants.Zero,
-            signer.address,
-            ethers.constants.MaxUint256, 
-            options);
         await tx.wait();
 
         await showBalance();
