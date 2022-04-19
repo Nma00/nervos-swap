@@ -108,7 +108,7 @@ const BalanceText = styled(Text)`
 
 const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
   [ChainId.MAINNET]: null,
-  [ChainId.GW]: 'Godwoken L2 Network',
+  [ChainId.GW]: 'Godwoken L2 Testnet',
   [ChainId.ROPSTEN]: 'Ropsten Network',
 }
 

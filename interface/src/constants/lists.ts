@@ -1,6 +1,6 @@
 // the Nervos Swap Default token list lives here
 export const DEFAULT_TOKEN_LIST_URL =
-  'https://gist.githubusercontent.com/nma06/a6ed2b249d92d04efa09ae897f32b50b/raw/b15d7c54aaefa80183d284e5abfe772b750b52db/nervoswap.tokenlist.kson'
+  'https://gist.githubusercontent.com/nma06/5282e90911f87b5f59bb03e9ef2d43ce/raw/db98f9ff4616853c2ebc5d9eaa2d1145db5d1a2d/nervoswap.tokenlist.json'
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [
   DEFAULT_TOKEN_LIST_URL
