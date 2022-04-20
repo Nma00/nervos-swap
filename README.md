@@ -5,13 +5,13 @@ Demo site : http://nervoswap.freeddns.org:8080
 
 Video : https://youtu.be/O501_cvzmm4
 
-All swaps involving CKB currency are made with [CKB ERC20 (pCKB)](https://v1.aggron.gwscan.com/account/0x86efaff75201Ed513c2c9061f2913eec850af56C).
+All swaps involving CKB native currency are made with [CKB ERC20 (pCKB)](https://v1.aggron.gwscan.com/account/0x86efaff75201Ed513c2c9061f2913eec850af56C).
 
-## Test
+## Test procedure
 
 Use [this Faucet](http://nervoswap.freeddns.org:8081) to generate test tokens : TOKENA and TOKENB.
 
-Pools available for testing : TOKENA/TOKENB, CKB/TOKENA, CKB/TOKENB
+Test the application using one of this pool : TOKENA/TOKENB, CKB/TOKENA, CKB/TOKENB
 
 ## Build
 
